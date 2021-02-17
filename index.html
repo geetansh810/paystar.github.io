@@ -2,59 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PayStar</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="syle.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="p1-style.css">
+    <title>Paystar</title>
 </head>
 <body>
-    
-    <div id="landing-page" class="container-fluid">
-        <div class="row">
 
-        <div id="logo" class="col-md-5 d-sm-inline d-none">
+    <div class="landing-page d-md-flex d-block">
+        <div class="logo">
             <img src="Asset 2.png" alt="">
             <h2>Welcome!</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores  sunt quisquam expedita quos doloribus perspiciatis, dolore aspernatur voluptatibus reiciendis laudantium suscipit similique itaque cum? Nemo tempora ipsa harum exercitationem quo architecto, molestiae libero voluptatibus.</p>
+            <p>Lorem ipsum consectetur, adipisicing elit. Dolores  sunt quisquam doloribus perspiciatis, dolore aspernatur voluptatibus reiciendis laudantium suscipit similique itaque cum? Nemo tempora ipsa harum exercitationem quo architecto, molestiae libero voluptatibus.</p>
         </div>
 
-
-            <div class="col-md-5 col-sm-7 m-auto mt-5 ms-md-5">
-                <div class="card text-md-center">
-                    <div class="login-box">
-                        <div class="login-snip"> 
-                            <input id="tab-1" type="radio" name="tab" class="sign-in" checked>
-                            <label for="tab-1" class="tab">Login</label> 
-                            
-                            <input id="tab-2" type="radio" name="tab" class="sign-up">
-                            <label for="tab-2" class="tab">Register</label>
-
-                            <div class="login-space">
-                                <div class="login">
-                                    <div class="group"> <label for="user" class="label">Email/Mobile Number</label> <input id="user" type="text" class="input" placeholder="Enter your username"> </div>
-                                    <div class="group"> <label for="pass" class="label">Password</label> <input id="pass" type="password" class="input" data-type="password" placeholder="Enter your password"> </div>
-                                    <div class="foot"> <a href="#">Forgot Password</a> </div>
-                                    <div class="group"> <input type="submit" class="button" value="Login"> </div>
-                                    <div class="hr"></div>
-                                    </div>
-                                <div class="sign-up-form">
-                                    <div class="group"> <label for="user" class="label">Username</label> <input id="user" type="text" class="input" placeholder="Create your Username"> </div>
-                                    <div class="group"> <label for="pass" class="label">Password</label> <input id="pass" type="password" class="input" data-type="password" placeholder="Create your password"> </div>
-                                    <div class="group"> <label for="pass" class="label">Email Address</label> <input id="pass" type="text" class="input" placeholder="Enter your email address"> </div>
-                                    <div class="group"> <input type="submit" class="button" value="Sign Up"> </div>
-                                    <div class="hr"></div>
-                                    <div class="foot"> <label for="tab-1">Already Member?</label> </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <div class="form">
+            
+            <div class="tab">
+                <div class="tab-inner">
+                    <button class="tablinks" id="defaultOpen">Log In</button>
                 </div>
-            </div>
+                <div class="tab-inner">
+                    <button class="tablinks" onclick="openCity(event, 'sign-in')">Register</button>
+                </div>
+            </div> 
+
+            <form action="">
+                <div class="form-wrapper">
+                    <label for="">Email/Mobile Number</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="form-wrapper">
+                    <label for="">Password</label>
+                    <input type="password" class="form-control">
+                    <span><p>Forget Password</p></span>
+                </div>
+                <button>Login</button>
+                <div class="end-text"><p>Not a member yet?<span><a href="#">Register</a></span></p></div>
+				
+            </form>
         </div>
     </div>
+    
 
 
+    <script src="bootstrap.bundle.js"></script>
 </body>
 </html>
